@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ぱちしらす Official Website</title>
+    <style>
+        /* 全体の設定：高さを固定せず、中身に合わせて伸ばす */
+        html, body {
+            height: auto;
+            min-height: 100%;
+            background-color: #0b0d17;
+            color: #ffffff;
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-y: visible; /* スクロールを確実に許可 */
+        }
+
+        header {
+            padding: 50px 20px;
+            background: #1a1c2c;
+            text-align: center;
+            border-bottom: 3px solid #00b4d8;
+        }
+
+        .hero-title {
+            font-size: clamp(2rem, 8vw, 3rem);
+            margin: 10px 0;
+            text-shadow: 0 0 10px #00b4d8;
+        }
+
+        main {
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 20px;
+            display: block; /* 要素を縦に並べる */
+        }
+
+        section {
+            background: #1a1c2c;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 30px;
+            border: 1px solid #333;
+            box-sizing: border-box;
+        }
+
+        h2 {
+            color: #00b4d8;
+            border-left: 5px solid #00b4d8;
+            padding-left: 15px;
+            margin-top: 0;
+        }
+
+        .profile-flex {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .profile-image {
+            width: 180px;
+            height: 180px;
+            background: #333;
+            border: 2px solid #00b4d8;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .profile-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .yt-button {
+            display: inline-block;
+            background: #ff0000;
+            color: white !important;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        /* カレンダーをレスポンシブ（画面幅に合わせる）にする */
+        .calendar-container {
+            width: 100%;
+            overflow: hidden;
+            border-radius: 8px;
+            background: #fff;
+        }
+
+        .calendar-container iframe {
+            width: 100%;
+            height: 500px;
+            border: 0;
+        }
+
+        .note {
+            color: #aaa;
+            font-size: 0.9rem;
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 50px 20px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div style="color:#00b4d8; font-weight:bold;">藍空学園代表</div>
+        <h1 class="hero-title">ぱちしらす</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Mission / 活動目的</h2>
+            <p>一つ、<strong style="color:#f72585;">「藍空学園代表」</strong>として、その名を皆さんの脳裏に刻み込むこと。私が動くことで、学園の存在を世に知らしめる。それが私の使命です。</p>
+            <p>二つ、これは単なる作業ではない。私の人生を豊かにするための<strong style="color:#f72585;">「究極の趣味」</strong>へと昇華させること。自分が一番楽しみ、その熱量を共有したいと考えています。</p>
+            <p>三つ、そして何より……<strong style="color:#f72585;">「ずっとやろうと思ってたんだ、これ！」</strong>。構想数年、ついに重い腰を上げました。溢れ出る「やりたい」を形にする瞬間が、今ここから始まります。</p>
+        </section>
+
+        <section>
+            <h2>About / 自己紹介</h2>
+            <div class="profile-flex">
+                <div class="profile-image">
+                    <img src="ぱちしらすプロフィール写真.png" alt="プロフィール写真" onerror="this.src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII='">
+                </div>
+                <div style="flex: 1; min-width: 200px;">
+                    <p><strong>誕生日:</strong> 4月18日</p>
+                    <p><strong>性別:</strong> 男性</p>
+                    <p><strong>好きなこと:</strong> YouTubeを見ること</p>
+                    <p><strong>役職:</strong> 藍空学園 代表</p>
+                    <a href="https://www.youtube.com/@%E3%81%B1%E3%81%A1%E3%81%97%E3%82%89%E3%81%99%E3%81%A1%E3%82%89%E3%82%93%E3%81%AD%E3%82%8B" target="_blank" class="yt-button">
+                        YouTubeチャンネル
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Schedule / 予定</h2>
+            <div class="calendar-container">
+                <iframe src="https://calendar.google.com/calendar/embed?src=pachishilasu-official%40yahoo.co.jp&ctz=Asia%2FTokyo"></iframe>
+            </div>
+            <p class="note">※藍空学園高等学校・中学校兼用です。ご理解ください。</p>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2026 ぱちしらす / 藍空学園
+    </footer>
+
+</body>
+</html>
